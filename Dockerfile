@@ -71,5 +71,5 @@ EXPOSE 8080
 VOLUME config/params
 
 COPY docker-entrypoint.sh docker-entrypoint.sh
-COPY Script.php Script.php
+COPY CheckTablesExist.php CheckTablesExist.php
 ENTRYPOINT ["/bin/sh", "./docker-entrypoint.sh"]
