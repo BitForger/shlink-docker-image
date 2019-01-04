@@ -71,4 +71,5 @@ EXPOSE 8080
 VOLUME config/params
 
 COPY docker-entrypoint.sh docker-entrypoint.sh
+COPY Script.php Script.php
 ENTRYPOINT ["/bin/sh", "./docker-entrypoint.sh"]
